@@ -40,6 +40,9 @@ public class LoginServlet extends HttpServlet {
 				if(is) {
 					response.sendRedirect("AdminDashboard.jsp");
 				}
+				else{
+					response.sendRedirect("LoginFailure.jsp");
+				}
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -71,6 +74,9 @@ public class LoginServlet extends HttpServlet {
 				if(is)
 				{
 					response.sendRedirect("EmployeeDashboard.jsp");
+				}
+				else{
+					response.sendRedirect("LoginFailure.jsp");
 				}
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
