@@ -53,10 +53,7 @@ public class LoginServlet extends HttpServlet {
 			
 		
 		}
-		else
-		{
-			response.sendRedirect("LoginFailure.jsp");
-		}
+		
 		if(role.equals("employee")) {
 			
 			DBConnection obj=new DBConnection();
@@ -85,10 +82,6 @@ public class LoginServlet extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
-		else
-		{
-			response.sendRedirect("LoginFailure.jsp");
 		}
 		
 		
